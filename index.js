@@ -363,7 +363,7 @@
                 this.dimensions.HEIGHT, Runner.classes.PLAYER);
 
             this.canvasCtx = this.canvas.getContext('2d');
-            this.canvasCtx.fillStyle = '#f7f7f7';
+            this.canvasCtx.fillStyle = '#CEE7DF';
             this.canvasCtx.fill();
             Runner.updateCanvasScaling(this.canvas);
 
@@ -1460,7 +1460,7 @@
         {
             type: 'PTERODACTYL',
             width: 46,
-            height: 40,
+            height: 50,
             yPos: [100, 75, 50], // Variable height.
             yPosMobile: [100, 50], // Variable height mobile.
             multipleSpeed: 999,

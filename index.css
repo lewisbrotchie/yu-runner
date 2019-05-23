@@ -7,6 +7,16 @@ html, body {
   margin: 0;
   width: 100%;
   height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat:no-repeat;
+  background: -webkit-linear-gradient( to left top, #FEF48E, #B7EFDA);
+  background: -moz-linear-gradient( to left top, #FEF48E, #B7EFDA);
+  background: -ms-linear-gradient( to left top, #FEF48E, #B7EFDA);
+  background: -o-linear-gradient( to left top, #FEF48E, #B7EFDA);
+  background: linear-gradient( to left top, #FEF48E, #B7EFDA);
 }
 
 .icon {
