@@ -287,7 +287,7 @@
          */
         loadImages: function () {
             if (IS_HIDPI) {
-                Runner.imageSprite = document.getElementById('offline-resources-2x');
+                Runner.imageSprite = document.getElementById('offline-resources-1x');
                 this.spriteDef = Runner.spriteDefinition.HDPI;
             } else {
                 Runner.imageSprite = document.getElementById('offline-resources-1x');
