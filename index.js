@@ -1065,12 +1065,12 @@
             var restartTargetY = this.canvasDimensions.HEIGHT / 2;
 
             if (IS_HIDPI) {
-                textSourceY *= 2;
-                textSourceX *= 2;
-                textSourceWidth *= 2;
-                textSourceHeight *= 2;
-                restartSourceWidth *= 2;
-                restartSourceHeight *= 2;
+                textSourceY *= 1;
+                textSourceX *= 1;
+                textSourceWidth *= 1;
+                textSourceHeight *= 1;
+                restartSourceWidth *= 1;
+                restartSourceHeight *= 1;
             }
 
             textSourceX += this.textImgPos.x;
@@ -1333,8 +1333,8 @@
                 var sourceHeight = this.typeConfig.height;
 
                 if (IS_HIDPI) {
-                    sourceWidth = sourceWidth * 2;
-                    sourceHeight = sourceHeight * 2;
+                    sourceWidth = sourceWidth * 1;
+                    sourceHeight = sourceHeight * 1;
                 }
 
                 // X position in sprite.
@@ -1689,10 +1689,10 @@
             var sourceHeight = this.config.HEIGHT;
 
             if (IS_HIDPI) {
-                sourceX *= 2;
-                sourceY *= 2;
-                sourceWidth *= 2;
-                sourceHeight *= 2;
+                sourceX *= 1;
+                sourceY *= 1;
+                sourceWidth *= 1;
+                sourceHeight *= 1;
             }
 
             // Adjustments for sprite sheet position.
@@ -1966,9 +1966,9 @@
 
             // For high DPI we 2x source values.
             if (IS_HIDPI) {
-                sourceWidth *= 2;
-                sourceHeight *= 2;
-                sourceX *= 2;
+                sourceWidth *= 1;
+                sourceHeight *= 1;
+                sourceX *= 1;
             }
 
             sourceX += this.spritePos.x;
@@ -2162,8 +2162,8 @@
             var sourceHeight = Cloud.config.HEIGHT;
 
             if (IS_HIDPI) {
-                sourceWidth = sourceWidth * 2;
-                sourceHeight = sourceHeight * 2;
+                sourceWidth = sourceWidth * 1;
+                sourceHeight = sourceHeight * 1;
             }
 
             this.canvasCtx.drawImage(Runner.imageSprite, this.spritePos.x,
@@ -2297,10 +2297,10 @@
             var starSourceX = Runner.spriteDefinition.LDPI.STAR.x;
 
             if (IS_HIDPI) {
-                moonSourceWidth *= 2;
-                moonSourceHeight *= 2;
+                moonSourceWidth *= 1;
+                moonSourceHeight *= 1;
                 moonSourceX = this.spritePos.x +
-                    (NightMode.phases[this.currentPhase] * 2);
+                    (NightMode.phases[this.currentPhase] * 1);
                 starSize *= 2;
                 starSourceX = Runner.spriteDefinition.HDPI.STAR.x;
             }
@@ -2340,7 +2340,7 @@
 
                 if (IS_HIDPI) {
                     this.stars[i].sourceY = Runner.spriteDefinition.HDPI.STAR.y +
-                        NightMode.config.STAR_SIZE * 2 * i;
+                        NightMode.config.STAR_SIZE * 1 * i;
                 } else {
                     this.stars[i].sourceY = Runner.spriteDefinition.LDPI.STAR.y +
                         NightMode.config.STAR_SIZE * i;
@@ -2404,7 +2404,7 @@
                 if (IS_HIDPI) {
                     if (dimension != 'YPOS') {
                         this.sourceDimensions[dimension] =
-                            HorizonLine.dimensions[dimension] * 2;
+                            HorizonLine.dimensions[dimension] * 1;
                     }
                 } else {
                     this.sourceDimensions[dimension] =
